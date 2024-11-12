@@ -11,10 +11,11 @@ int main(){
     puts("Segundo numero: ");
     scanf("%d",&b);
 
+
     for(int i=min(a,b);i<(max(a,b) +1);i++){
         (i%2)? soma : (soma+=i);
     }
-
+    printf("A soma dos numeros pares no intervalo eh: %d",soma);
 
     return 0;
 }

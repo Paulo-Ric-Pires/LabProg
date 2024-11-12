@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    int num=0,maior=0,menor=0;
+    int num=0,maior=0,menor=0,c;
 
     puts("Digite um numero inteiro(O numero zero termina o programa): ");
     scanf("%d",&num);
-
     menor = num;
     
     do{
