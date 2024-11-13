@@ -11,7 +11,7 @@ int main(){
     puts("Segundo numero: ");
     scanf("%d",&b);
 
-    for(int i = min(a,b); i < (max(a,b)+1);i++){
+    for(int i = min(a,b); i <= max(a,b);i++){
         if((i % 4) == 0){
             printf("O numero %d eh multiplo de 4 e seu quadrado eh: %d\n",i,(i*i));
         }

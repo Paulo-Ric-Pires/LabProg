@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int somatorioTres,somatorioCinco;
+    int somatorioTres=0,somatorioCinco=0;
 
     for(int i=0;i<=200;i++){
         if(i<100 && !(i%3)){

@@ -30,6 +30,7 @@ int main(){
             puts("Sabado");
             break;            
         default:
+            puts("Numero invalido.");
             break;
         }
     }

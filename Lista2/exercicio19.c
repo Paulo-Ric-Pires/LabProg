@@ -3,7 +3,7 @@
 #define max(num1,num2) (num1>num2)? num1:num2
 
 int main(){
-    int quantidade,a,b,somatorio;
+    int quantidade,a,b,somatorio=0;
 
     puts("Digite dois numeros");
     puts("Primeiro numero: ");
