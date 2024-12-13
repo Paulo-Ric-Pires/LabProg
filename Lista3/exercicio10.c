@@ -9,7 +9,7 @@ int main(){
     int numeros[DIMENSAO][DIMENSAO];
     int num,count=0;
 
-     srand(time(NULL));
+    srand(time(NULL));
 
     for(int i=0;i<DIMENSAO;i++){
         for(int j=0;j<DIMENSAO;j++){
