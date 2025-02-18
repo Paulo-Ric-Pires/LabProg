@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <math.h>
 #define DATATYPE unsigned char
-#include ".\LibProjeto.h"
+#include "../LibProjeto.h"
 
 //Aloca dinamicamente uma quantidade de elementos recibida por parâmetro em um array
 int* alocaElementos(int totalElementos){

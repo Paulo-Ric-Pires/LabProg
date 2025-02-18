@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include ".\LibProjeto.h"
+#include "../LibProjeto.h"
 /*
 struct pgm{
 	int p;

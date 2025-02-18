@@ -6,6 +6,7 @@
 #include "./LibProjeto.h"
 #define QTDIMG 100
 #define DIRETORIO "dataset_Herlev_reduzido_PGM/normal_superficiel"
+#define K 3
 
 int main(){
 	srand(time(NULL));
@@ -14,7 +15,7 @@ int main(){
 	double time_per_img, time_total=0;
 	long long int a = 999999999;
 	char filename[200];
-	int k = 5;
+	
 
     DIR *d;
     struct dirent *dir;
@@ -41,12 +42,12 @@ int main(){
 					
 				struct pgm* data = PGMImageData(filename);
 
-				kmeans(distanciaManhattan1D, k, data->linhas, data->colunas, data->pData, data->maxvalor);
+				kmeans(distanciaManhattan1D, K, data->linhas, data->colunas, data->pData, data->maxvalor);
 
 				if(strstr(filename, "-k") != NULL){
 					snprintf(filename, sizeof(filename), "%s/%s", DIRETORIO, dir->d_name);
 				}else{
-					snprintf(filename, sizeof(filename), "%s/%s-k", DIRETORIO, dir->d_name);
+					snprintf(filename, sizeof(filename), "%s/%s-k%d", DIRETORIO, dir->d_name,K);
 				}	
 
 				writePGMImage(data, filename);

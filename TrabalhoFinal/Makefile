@@ -1,7 +1,7 @@
 all: prog.e
 
-prog.exe: main.o util.o kmeans.o PgmData.o
-	gcc -o prog.e main.o util.o kmeans.o PgmData.o
+prog.e: main.o util.o ImgSegmentation/kmeans.o ImageData/PgmData.o
+	gcc -o prog.e main.o util.o ImgSegmentation/kmeans.o ImageData/PgmData.o
 
 main.o: main.c LibProjeto.h
 	gcc -o main.o -c main.c
@@ -9,11 +9,11 @@ main.o: main.c LibProjeto.h
 util.o: util.c LibProjeto.h
 	gcc -o util.o -c util.c
 
-kmeans.o: ImageData/kmeans.c LibProjeto.h
-	gcc -o kmeans.o -c kmeans.c
+ImgSegmentation/kmeans.o: ImgSegmentation/kmeans.c LibProjeto.h
+	gcc -o ImgSegmentation/kmeans.o -c ImgSegmentation/kmeans.c
 
-PgmData.o: ImgSegmentation/PgmData.c LibProjeto.h
-	gcc -o PgmData.o -c PgmData.c
+ImageData/PgmData.o: ImageData/PgmData.c LibProjeto.h
+	gcc -o ImageData/PgmData.o -c ImageData/PgmData.c
 
 clean:
-	rm -f *.o prog.e
+	rm -f *.o prog.e ImgSegmentation/*.o ImageData/*.o
