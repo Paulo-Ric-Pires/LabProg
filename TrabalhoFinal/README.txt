@@ -10,8 +10,9 @@ A distância em questão a ser usada será o cálculo  da distância de Manhatta
 *CONSIDERAÇÕES
 
 -> É possível fazer alterações em alguns tipos dados do programa:
-   DATATYPE - Usado para definir o tipo do dado do array de transformação.
-   DIRETORIO - Usado para definir o nome do diretorio onde os arquivos PGM estão contidos.
-   QTDIMG - Usado para definir o número de máximo de imagens a serem lidas.
+   #define DATATYPE - Usado para definir o tipo do dado do array de transformação.
+   #defineDIRETORIO - Usado para definir o nome do diretorio onde os arquivos PGM estão contidos.
+   #defineQTDIMG - Usado para definir o número de máximo de imagens a serem lidas.
+   #define K - Usado para definir o número de clusters.
 
 O output do programa mostra os arquivos PGM lidos e tempo de execução final.  
