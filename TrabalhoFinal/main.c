@@ -32,8 +32,7 @@ int main(){
 		
 			
 			while ((dir = readdir(d)) != NULL && count < QTDIMG)
-			{	
-				if (strcmp(dir->d_name, ".") == 0 || strcmp(dir->d_name, "..") == 0) continue;
+			{
 
 				filename[0] = '\0';
 				snprintf(filename, sizeof(filename), "%s/%s", DIRETORIO, dir->d_name);
